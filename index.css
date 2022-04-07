@@ -7,11 +7,8 @@
 body {
     display: flex;
     background-color: #fef6e4;
+    flex-direction: column;
 
-}
-
-h1:hover {
-    font-size:28px;
 }
 
 header {
@@ -23,6 +20,18 @@ header {
     padding: 10px;
 }
 
+.titulo {
+    color: #001858;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+    padding-left: 16px;
+    font-size: 25px;
+}
+
+h1:hover {
+    font-size: 28px;
+}
 
 nav {
     height: 100%;
@@ -55,28 +64,113 @@ nav a {
     border-bottom: 3px solid;
 }
 
-.titulo {
-    color: #001858;
-    align-items: center;
+.frase {
     font-family: 'Mulish', sans-serif;
-    font-weight: 900;
-    padding-left: 16px;
-    font-size: 25px;
+    color: #001858;
+    font-weight: 800;
+    text-align: center;
+    padding: 18px;
+
 }
 
-/* Tablet */
+.card {
+    height: auto;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #001858;
+    border-radius: 10px;
+    border-bottom: 3px solid;
+}
 
-@media(max-width:700px) {
-    h1 {
-        display: none;
-    }
+.card-conteudo {
+    width: 100%;
+    padding: 10px;
+}
 
-    nav {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
+.conteudo {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    padding: 30px;
+    justify-content: space-between;
 
-    }
+}
+
+.card-conteudo h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-conteudo h2 {
+    font-family: 'Mulish', sans-serif;
+    color: #001858;
+    font-weight: 900;
+
+}
+
+.card-conteudo p {
+    font-family: 'Mulish', sans-serif;
+    color: #001858;
+    text-align: center;
+}
+
+.pet {
+    height: 50%;
+    width: 100%;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 20px;
+
+
+}
+
+.botao button {
+    font-family: 'Mulish', sans-serif;
+    color: #001858;
+    font-weight: 900;
+    background-color: #f582ae;
+    font-size: 18px;
+    border-radius: 16px;
+    width: 100px;
+    border: 1px solid #001858;
+    border-bottom: 3px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+
+
+}
+
+button:hover {
+    color: brown;
+}
+
+
+
+
+
+
+footer {
+    background-color: #8bd3dd;
+    padding-bottom: 40px;
+    padding-bottom: 70px;
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    color: #001858;
+    font-weight: 700;
+
+}
+footer p{
+    margin-top: 25px;
 }
